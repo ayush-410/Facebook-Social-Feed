@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SocialFeedCollectionViewCell" customModule="FacebookSocialFeedSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SeW-ay-2gE">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="SeW-ay-2gE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DqI-KK-wYx"/>
+                <constraint firstAttribute="bottom" secondItem="SeW-ay-2gE" secondAttribute="bottom" id="ar9-Fi-mv1"/>
+                <constraint firstItem="SeW-ay-2gE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ph9-rq-Yue"/>
+                <constraint firstAttribute="trailing" secondItem="SeW-ay-2gE" secondAttribute="trailing" id="wCP-9e-grh"/>
+            </constraints>
+            <connections>
+                <outlet property="feedImage" destination="SeW-ay-2gE" id="rp4-CS-mi8"/>
+            </connections>
+            <point key="canvasLocation" x="47.328244274809158" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+</document>
